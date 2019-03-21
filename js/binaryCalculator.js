@@ -33,19 +33,19 @@ function calc() {
 
   switch (op) {
     case "+":
-      res.innerText = parseInt(x + y).toString(2);
+      res.innerText = (x + y).toString(2);
       break;
 
     case "-":
-      res.innerText = parseInt(x - y).toString(2);
+      res.innerText = (x - y).toString(2);
       break;
 
     case "*":
-      res.innerText = parseInt(x * y).toString(2);
+      res.innerText = (x * y).toString(2);
       break;
 
     case "/":
-      res.innerText = parseInt(x / y).toString(2);
+      res.innerText = (x / y).toString(2);
 
   }
 }
