@@ -20,32 +20,32 @@ btnDiv.onclick = function () { console.log("Div"); res.innerText += "/"; }
 btnClr.onclick = function () { console.log("Clr"); res.innerText = ""; }
 btnEql.onclick = calc;
 
-// function calc() { console.log(res.innerText)}
 function calc() {
   let input = (res.innerText);
-  // TODO parse input using regex to get array [argument1, operator, argument2]
+  let arr = input.match(/([0-1]+)([\+\-\*\/])([0-1]+)/) ;
 
-  let arr = ["1010", "/", "1010"] ;
-  let x = parseInt(arr[0], 2);
-  let y = parseInt(arr[2], 2);
-  let op = arr[1];
+  console.log(arr);
+  // let arr = ["1010", "*", "1010"] ;
+
+  let x = parseInt(arr[1], 2);
+  let y = parseInt(arr[3], 2);
+  let op = arr[2];
 
   switch (op) {
     case "+":
-      res.innerText = parseInt(x + y, 10).toString(2);
+      res.innerText = parseInt(x + y).toString(2);
       break;
 
     case "-":
-      res.innerText = parseInt(x - y, 10).toString(2);
+      res.innerText = parseInt(x - y).toString(2);
       break;
 
     case "*":
-      res.innerText = parseInt(x * y, 10).toString(2);
+      res.innerText = parseInt(x * y).toString(2);
       break;
 
     case "/":
-      res.innerText = parseInt(x / y, 10).toString(2);
-      break;
+      res.innerText = parseInt(x / y).toString(2);
 
   }
 }
