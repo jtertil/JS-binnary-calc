@@ -24,9 +24,6 @@ function calc() {
   let input = (res.innerText);
   let arr = input.match(/([0-1]+)([\+\-\*\/])([0-1]+)/) ;
 
-  console.log(arr);
-  // let arr = ["1010", "*", "1010"] ;
-
   let x = parseInt(arr[1], 2);
   let y = parseInt(arr[3], 2);
   let op = arr[2];
@@ -46,6 +43,5 @@ function calc() {
 
     case "/":
       res.innerText = (x / y).toString(2);
-
   }
 }

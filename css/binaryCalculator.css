@@ -1,5 +1,15 @@
 body {
-  width: 30%;
+  width: 33%;
+}
+
+button {
+  width: 25%;
+  height: 36px;
+  font-size: 18px;
+  margin: 0px;
+  float: left;
+  line-height: 36px;
+  text-align: center;
 }
 
 #res {
@@ -11,18 +21,6 @@ body {
   padding: 10px;
   box-sizing: border-box;
   border: 2px solid black;
-}
-
-#btns > div {
-  width: 25%;
-  height: 36px;
-  font-size: 18px;
-  margin: 0px;
-  float: left;
-  line-height: 36px;
-  text-align: center;
-  box-sizing: border-box;
-  border: 1px solid grey;
 }
 
 #btn0,
